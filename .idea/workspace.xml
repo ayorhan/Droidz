@@ -6,8 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7def3537-ee22-403c-b174-05f176ff4877" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/components/Speed.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainGamePanel.java" afterPath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainGamePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java" afterPath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/Droid.java" afterPath="$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/Droid.java" />
     </list>
     <ignored path="Droidz.iws" />
@@ -78,10 +80,19 @@
       <file leaf-file-name="MainGamePanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainGamePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="14" selection-start="2984" selection-end="2984" vertical-scroll-proportion="-0.06813996">
+            <state line="137" column="48" selection-start="4683" selection-end="4683" vertical-scroll-proportion="1.1179322">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Speed.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/components/Speed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="43" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +120,7 @@
       <file leaf-file-name="MainThread.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+            <state line="45" column="44" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +131,7 @@
       <file leaf-file-name="Droid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/Droid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="34" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
+            <state line="84" column="101" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/com/ayorhan/android/droidz/DroidzActivity.java" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/components/Speed.java" />
         <option value="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java" />
         <option value="$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/Droid.java" />
         <option value="$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainGamePanel.java" />
@@ -260,6 +272,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Droidz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Droidz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="droidz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,7 +590,11 @@
       <created>1347023348524</created>
       <updated>1347023348524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I can now drag the droid all around screen.">
+      <created>1347027445205</created>
+      <updated>1347027445205</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -588,13 +630,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40563086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40563086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14797008" sideWeight="0.5943691" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32638165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14797008" sideWeight="0.6736184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32638165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -640,7 +682,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Droid object added" />
+    <option name="LAST_COMMIT_MESSAGE" value="I can now drag the droid all around screen." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -657,6 +699,7 @@
     <MESSAGE value="implemented main thread and created an empty view handling gestures." />
     <MESSAGE value="added readme" />
     <MESSAGE value="Droid object added" />
+    <MESSAGE value="I can now drag the droid all around screen." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,15 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/DroidzActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
@@ -705,9 +739,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/components/Speed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="43" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="44" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/model/Droid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="34" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
+        <state line="84" column="101" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -716,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ayorhan/android/droidz/MainGamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="14" selection-start="2984" selection-end="2984" vertical-scroll-proportion="-0.06813996">
+        <state line="137" column="48" selection-start="4683" selection-end="4683" vertical-scroll-proportion="1.1179322">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

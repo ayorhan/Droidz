@@ -3,6 +3,7 @@ package com.ayorhan.android.droidz.model;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.util.Log;
+import com.ayorhan.android.droidz.model.components.Speed;
 
 import java.awt.font.TextAttribute;
 
@@ -19,11 +20,13 @@ public class Droid {
     private int x;
     private int y;
     private boolean touched;
+    private Speed speed;
 
     public Droid(Bitmap bitmap, int x, int y) {
         this.bitmap = bitmap;
         this.x = x;
         this.y = y;
+        this.speed = new Speed();
     }
 
     public Bitmap getBitmap() {
@@ -58,6 +61,14 @@ public class Droid {
         this.touched = touched;
     }
 
+    public Speed getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(Speed speed) {
+        this.speed = speed;
+    }
+
     public void draw(Canvas canvas){
         canvas.drawBitmap(bitmap, x - (bitmap.getWidth()/2), y - (bitmap.getHeight()/2), null);
     }
@@ -77,5 +88,12 @@ public class Droid {
             Log.d(TAG, "something not touched");
             setTouched(false);
         }
+    }
+
+    public void update() {
+           if(!touched){
+               x += (speed.getXv() * speed.getXDirection());
+               y += (speed.getYv() * speed.getYDirection());
+           }
     }
 }

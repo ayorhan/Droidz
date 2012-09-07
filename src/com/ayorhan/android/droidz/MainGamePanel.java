@@ -11,6 +11,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import com.ayorhan.android.R;
 import com.ayorhan.android.droidz.model.Droid;
+import com.ayorhan.android.droidz.model.components.Speed;
 
 /**
  * Created with IntelliJ IDEA.
@@ -110,5 +111,33 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         super.onDraw(canvas);
         canvas.drawColor(Color.BLACK);
         droid.draw(canvas);
+    }
+
+    public void update() {
+        // check collision with the RIGHT WALL if heading RIGHT
+        if (droid.getSpeed().getXDirection() == Speed.DIRECTION_RIGHT
+                && droid.getX() + droid.getBitmap().getWidth() / 2 >= getWidth()){
+            droid.getSpeed().toggleXDirection();
+        }
+
+        // check collision with the LEFT WALL if heading LEFT
+        if (droid.getSpeed().getXDirection() == Speed.DIRECTION_LEFT
+                && droid.getX() - droid.getBitmap().getWidth() / 2 <= 0){
+            droid.getSpeed().toggleXDirection();
+        }
+
+        // check collision with the BOTTOM WALL if heading DOWN
+        if (droid.getSpeed().getYDirection() == Speed.DIRECTION_DOWN
+                && droid.getY() + droid.getBitmap().getHeight() / 2 >= getHeight()){
+            droid.getSpeed().toggleYDirection();
+        }
+
+        // check collision with the TOP WALL if heading UP
+        if (droid.getSpeed().getYDirection() == Speed.DIRECTION_UP
+                && droid.getY() - droid.getBitmap().getHeight() / 2 <= 0){
+            droid.getSpeed().toggleYDirection();
+        }
+        // Update the droid
+        droid.update();
     }
 }
