@@ -1,5 +1,6 @@
 package com.ayorhan.android.droidz;
 
+import android.graphics.Canvas;
 import android.media.SoundPool;
 import android.util.Log;
 import android.view.SurfaceHolder;
@@ -33,14 +34,26 @@ public class MainThread extends Thread{
     @Override
     public void run() {
         super.run();
-        long tickCount = 0L;
+        Canvas canvas;
         Log.d(TAG,"Starting game loop");
 
         while (running){
-            // update game state
-            // render state to the screen
+            canvas = null;
+            try{
+                canvas = this.surfaceHolder.lockCanvas();
+                synchronized (surfaceHolder){
+                    // update game state
+                    // render state to the screen
+                    this.gamePanel.onDraw(canvas);
+                }
+            } finally {
+                // in case of an exception, clear things up.
+                if(canvas != null){
+                    surfaceHolder.unlockCanvasAndPost(canvas);
+                }
+            }
+
         }
 
-        Log.d(TAG, "Game loop executed " + tickCount + " times");
     }
 }

@@ -2,11 +2,13 @@ package com.ayorhan.android.droidz;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import com.ayorhan.android.R;
 
 /**
  * Created with IntelliJ IDEA.
@@ -73,5 +75,6 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        canvas.drawBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.droid_1), 10, 10, null);
     }
 }
