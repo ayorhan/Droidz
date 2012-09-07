@@ -18,7 +18,7 @@ public class DroidzActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);    //To change body of overridden methods use File | Settings | File Templates.
+        super.onCreate(savedInstanceState);
 
         // Turn the title off
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -26,8 +26,8 @@ public class DroidzActivity extends Activity{
         // Make full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        // TODO Set MainGamePanel as the View
-        // setContentView();
+        // Set MainGamePanel as the View
+        setContentView(new MainGamePanel(this));
 
         Log.d(TAG, "View Added");
     }
@@ -35,12 +35,12 @@ public class DroidzActivity extends Activity{
     @Override
     protected void onDestroy() {
         Log.d(TAG, "Destroying...");
-        super.onDestroy();    //To change body of overridden methods use File | Settings | File Templates.
+        super.onDestroy();
     }
 
     @Override
     protected void onStop() {
         Log.d(TAG, "Stopping...");
-        super.onStop();    //To change body of overridden methods use File | Settings | File Templates.
+        super.onStop();
     }
 }
