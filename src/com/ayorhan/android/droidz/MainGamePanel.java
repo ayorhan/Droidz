@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -25,6 +26,12 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
 
     private MainThread thread;
     private Droid droid;
+
+    private String avgFps;
+
+    public void setAvgFps(String avgFps) {
+        this.avgFps = avgFps;
+    }
 
     public MainGamePanel(Context context) {
         super(context);
@@ -111,6 +118,17 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         super.onDraw(canvas);
         canvas.drawColor(Color.BLACK);
         droid.draw(canvas);
+
+        displayFps(canvas, avgFps);
+
+    }
+
+    private void displayFps(Canvas canvas, String fps){
+        if (canvas != null && fps != null){
+            Paint paint  = new Paint();
+            paint.setARGB(255,255,255,255);
+            canvas.drawText(fps, this.getWidth()-50, 20, paint);
+        }
     }
 
     public void update() {
